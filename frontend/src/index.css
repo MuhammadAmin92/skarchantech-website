@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #111111;
+}
+
+:root {
+  --primary: #0066ff;
+  --primary-dark: #0044cc;
+  --primary-light: #e8f0ff;
+  --bg-main: #f5f5f5;
+  --bg-white: #ffffff;
+  --bg-dark: #111111;
+  --text-main: #111111;
+  --text-muted: #777777;
+  --border: #e0e0e0;
+  --success: #00aa55;
+  --danger: #ff3333;
+}
+
+a { text-decoration: none; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f5f5f5; }
+::-webkit-scrollbar-thumb { background: #0066ff; border-radius: 3px; }
+
+/* ===== RESPONSIVE ===== */
+
+/* Navbar */
+@media (max-width: 768px) {
+  .navbar-inner {
+    padding: 12px 15px !important;
+  }
+  .navbar-links {
+    gap: 12px !important;
+  }
+  .navbar-logo-text {
+    font-size: 14px !important;
+  }
+  .navbar-top-bar {
+    display: none !important;
+  }
+}
+
+/* Hero Section */
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .hero-title {
+    font-size: 28px !important;
+  }
+  .hero-right {
+    display: none !important;
+  }
+}
+
+/* General Grid */
+@media (max-width: 768px) {
+  .two-col-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .four-col-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .page-container {
+    padding: 15px !important;
+  }
+}
+
+/* Cart & Checkout */
+@media (max-width: 768px) {
+  .cart-layout {
+    grid-template-columns: 1fr !important;
+  }
+  .cart-header {
+    display: none !important;
+  }
+  .cart-item {
+    grid-template-columns: auto 1fr !important;
+    flex-wrap: wrap !important;
+  }
+}
+
+/* Login/Register */
+@media (max-width: 768px) {
+  .auth-page {
+    grid-template-columns: 1fr !important;
+  }
+  .auth-left {
+    display: none !important;
+  }
+}
+
+/* Admin */
+@media (max-width: 768px) {
+  .admin-stats {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .admin-form-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
