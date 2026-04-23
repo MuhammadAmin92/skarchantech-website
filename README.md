@@ -45,6 +45,9 @@ skarchan-shop/
 │   ├── server.js               # Entry point
 │   └── package.json
 │
+
+
+
 ├── frontend/                   # React.js Application
 │   ├── public/
 │   ├── src/
